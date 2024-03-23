@@ -14,6 +14,18 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 });
+function box() {
+  let password = document.getElementById("password");
+  let password_2=document.getElementById("password-2")
+
+  if (password.type === "password" && password_2.type==="password") {
+    password.type = "text";
+    password_2.type="text";
+  } else {
+    password.type = "password";
+    password_2.type="password"
+  }
+}
 function button_signup() {
   let gmail = document.getElementById("email").value;
   let password = document.getElementById("password").value;
@@ -26,7 +38,7 @@ function button_signup() {
   localStorage.setItem("gmail", gmail);
   localStorage.setItem("password", password); 
   alert("Sign up completed");
-  window.location.href = "loginsignup.html";
+  window.location.href = "index.html";
 }
 
 function login() {
@@ -42,7 +54,7 @@ function login() {
 
   if (gmail === oldemail && password === oldpassword) {
     alert("Login successful");
-    window.location.href = "loginsign.html";
+    window.location.href = "index.html";
   } else {
     alert("Invalid email or password");
   }
