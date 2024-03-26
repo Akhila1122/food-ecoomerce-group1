@@ -137,4 +137,3 @@ searchInput.addEventListener('input', filterFoodItems);
 
 
 
-
