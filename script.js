@@ -1,3 +1,4 @@
+
 const main = document.getElementById("main");
 const toggleForm = () => {
   const container = document.querySelector('.container');
@@ -134,6 +135,3 @@ function displayResults(results) {
 
 
 searchInput.addEventListener('input', filterFoodItems);
-
-
-
